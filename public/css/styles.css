@@ -110,7 +110,30 @@ h2 {
   background-color: var(--darkest);
 }
 
-.carousel-component {
-  width: 24rem;
-  height: 18rem;
+.carousel {
+  width: 50%;
+  position: relative;
+}
+
+.carousel-item {
+  width: 100%;
+  border-radius: 2rem;
+  display: none;
+  transition: 200ms display ease-in-out;
+}
+
+.active {
+  display: block;
+}
+
+.carousel-btn {
+  position: absolute;
+  font-size: 3rem;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.next {
+  right: 0;
+  transform: translate(50%, -50%);
 }
